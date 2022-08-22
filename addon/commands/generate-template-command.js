@@ -1,3 +1,4 @@
+import defaultResources from "../utils/defaultResources";
 export default class GenerateTemplateCommand {
   name = 'generateTemplate';
 
