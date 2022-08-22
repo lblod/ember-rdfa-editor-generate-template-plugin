@@ -37,7 +37,7 @@
     "uuid": "^8.3.2"
   },
   "peerDependencies": {
-    "@lblod/ember-rdfa-editor": "^0.50.0",
+    "@lblod/ember-rdfa-editor": "^0.60.5",
     "ember-concurrency": "^2.2.0"
   },
   "devDependencies": {
