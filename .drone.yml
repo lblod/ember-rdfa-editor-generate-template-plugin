@@ -4,15 +4,15 @@ type: docker
 name: verify-pr
 steps:
 - name: install
-  image: danlynn/ember-cli:3.28.2
+  image: danlynn/ember-cli:3.28.5
   commands:
   - npm ci
 - name: lint
-  image: danlynn/ember-cli:3.28.2
+  image: danlynn/ember-cli:3.28.5
   commands:
   - npm run lint
 - name: test
-  image: danlynn/ember-cli:3.28.2
+  image: danlynn/ember-cli:3.28.5
   commands:
   - npm run test:ember
 trigger:
@@ -24,7 +24,7 @@ type: docker
 name: ember-compat-test
 steps:
 - name: ember-try
-  image: danlynn/ember-cli:3.28.2
+  image: danlynn/ember-cli:3.28.5
   commands:
     - npm ci
     - npm run test:ember-compatibility
@@ -41,7 +41,7 @@ type: docker
 name: release
 steps:
 - name: install dependencies
-  image: danlynn/ember-cli:3.28.2
+  image: danlynn/ember-cli:3.28.5
   commands:
     - npm ci
 - name: npm-release
