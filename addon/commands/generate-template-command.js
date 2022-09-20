@@ -19,7 +19,7 @@ export default class GenerateTemplateCommand {
       const resourceUris = quads.map((quad) => quad.subject.value);
       uris = [...uris, ...resourceUris];
     }
-    let documentHTML = controller._rawEditor.rootNode.outerHTML;
+    let documentHTML = controller.htmlContent;
     for (let uri of uris) {
       const uriParts = uri.split('/');
       uriParts.pop();
