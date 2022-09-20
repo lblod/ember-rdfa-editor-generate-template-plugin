@@ -1,4 +1,4 @@
-import GenerateTemplateCommand from "./commands/generate-template-command";
+import GenerateTemplateCommand from './commands/generate-template-command';
 /**
  * Entry point for GenerateTemplate
  *
@@ -28,7 +28,7 @@ export default class GenerateTemplatePlugin {
     return 'generate-template-plugin';
   }
 
-  initialize(controller, options) {
+  initialize(controller) {
     this.controller = controller;
     controller.registerCommand(
       new GenerateTemplateCommand(controller._rawEditor._model)
