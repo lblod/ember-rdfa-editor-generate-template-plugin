@@ -29,7 +29,6 @@ export default class GenerateTemplateCommand {
         `${uriWithoutUuid}/\${generateUuid()}`
       );
     }
-    console.log(documentHTML);
     return documentHTML;
   }
 }
