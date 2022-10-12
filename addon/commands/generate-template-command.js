@@ -26,9 +26,10 @@ export default class GenerateTemplateCommand {
       const uriWithoutUuid = uriParts.join('/');
       documentHTML = documentHTML.replace(
         uri,
-        `${uriWithoutUuid}/generateUuid()`
+        `${uriWithoutUuid}/\${generateUuid()}`
       );
     }
+    console.log(documentHTML);
     return documentHTML;
   }
 }
