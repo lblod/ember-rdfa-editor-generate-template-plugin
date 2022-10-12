@@ -1,4 +1,13 @@
 
+
+## 0.1.5 (2022-10-12)
+
+#### :bug: Bug Fix
+* [#4](https://github.com/lblod/ember-rdfa-editor-generate-template-plugin/pull/4) generateUuid() should be ${generateUuid()} ([@lagartoverde](https://github.com/lagartoverde))
+
+#### Committers: 1
+- Oscar Rodriguez Villalobos ([@lagartoverde](https://github.com/lagartoverde))
+
 ## 0.1.4 (2022-09-20)
 
 #### :bug: Bug Fix
